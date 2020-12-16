@@ -3,7 +3,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
-var bobObject1, bobObject2, bobObject3, bobObject4, bobObject5;
+var Object1, Object2, Object3, Object4, Object5;
 var roofObject, rope1, rope2, rope3, rope4, rope5;
 
 function preload()
@@ -19,10 +19,10 @@ function setup() {
 
 	//Create the Bodies Here.
     bobObject1 = new Bob(400,400);
-	bobObject2 = new Bob(450,400);
-	bobObject3 = new Bob(500,400);
-	bobObject4 = new Bob(350,400);
-	bobObject5 = new Bob(300,400);
+	Object2 = new Bob(450,400);
+	Object3 = new Bob(500,400);
+	Object4 = new Bob(350,400);
+	Object5 = new Bob(300,400);
   roofObject = new Ground(400,200,550,30); 
   rope1 = new Rope(bobObject1.body, roofObject.body, 0, 0);``
   rope2 = new Rope(bobObject2.body, roofObject.body,50,0);
@@ -37,7 +37,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background("lightgreen");
+  background("blue");
   bobObject1.display();
   bobObject2.display();
   bobObject3.display();
