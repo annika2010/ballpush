@@ -18,7 +18,7 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-    Object1 = new Bob(400,400);
+    bobObject1 = new Bob(400,400);
 	Object2 = new Bob(450,400);
 	Object3 = new Bob(500,400);
 	Object4 = new Bob(350,400);
